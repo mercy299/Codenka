@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/navbar.css" />
+    <link rel="stylesheet" href="./assets/styles/browse.css" />
+    <link rel="stylesheet" href="./assets/styles/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Heebo:wght@400;500;600;700&family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a23a0af2ea.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Browse</title>
+  </head>
+
+  <body>
+    <nav>
+      <img src="./assets/img/logo/logo.svg" alt="logo" width="150px" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="active"><a href="browse.html">Browse</a></li>
+        <li><a href="template.html">Become an author</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <ul class="nav-signup">
+        <li>
+          <a href="signup.html">Sign Up</a> | <a href="login.html">Login</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="hero-section">
+      <div class="content">
+        <div class="hero-section-left">
+          <p class="hero-section-text">Browse</p>
+          <div class="input-search">
+            <i class="fa-solid fa-magnifying-glass fg"></i>
+            <input
+              class="browse-input"
+              type="search"
+              placeholder="Search Libaries"
+            />
+          </div>
+        </div>
+        <div class="hero-section-right">
+          <img
+            src="./assets/img/browse-illustration.svg"
+            alt="objects"
+            width="250px"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="filter-and-result">
+      <div class="filter">
+        <div>
+          <div class="categories-dropdown">
+            <div>Filters</div>
+            <div class="categories-dropdown-drop">✕</div>
+          </div>
+          <br/>
+          <div class="categories-dropdown-grey">
+            <div>Categories</div>
+            <div class="categories-dropdown-drop">
+              <img
+                src="./assets/img/checkboxes-dropdown.svg"
+                alt="checkboxes-dropdown"
+              />
+            </div>
+          </div>
+          <br/>
+          <form class="form1">
+            <div class="categories-dropdown">
+              <label for="all">All</label>
+              <input
+                class="categories-dropdown-drop"
+                type="checkbox"
+                id="all"
+                name="all"
+                value="all"
+              />
+            </div> <br />
+            <div class="categories-dropdown">
+              <label for="photos">Photos</label>
+              <input
+                class="categories-dropdown-drop"
+                type="checkbox"
+                id="photos"
+                name="photos"
+                value="photos"
+                checked
+              /> </div> <br />
+            <div class="categories-dropdown">
+              <label for="templates">Templates</label>
+              <input
+                class="categories-dropdown-drop"
+                type="checkbox"
+                id="templates"
+                name="templates"
+                value="templates"
+              /> </div> <br />
+            <div class="categories-dropdown">
+              <label for="uikits">UI Kits</label>
+              <input
+                class="categories-dropdown-drop"
+                type="checkbox"
+                id="uikits"
+                name="uikits"
+                value="uikits"
+              />
+            </div> <br />
+          </form>
+        </div>
+        <div>
+          <div class="categories-dropdown-grey">
+            <div>Price Range</div>
+            <div class="categories-dropdown-drop">
+              <img
+                src="./assets/img/checkboxes-dropdown.svg"
+                alt="checkboxes-dropdown"
+              />
+            </div>
+          </div>
+          <br>
+          <form>
+            <div class="categories-dropdown">
+            <label for="free">Free</label>
+            <input
+              class="categories-dropdown-drop"
+              type="checkbox"
+              id="free"
+              name="free"
+              value="free"
+            />
+          </div>
+            <br />
+            <div class="categories-dropdown">
+            <label for="$1s">$1 - $10</label>
+            <input
+              class="categories-dropdown-drop"
+              type="checkbox"
+              id="$1"
+              name="$1"
+              value="$1"
+              checked
+            /> </div> <br />
+            <div class="categories-dropdown">
+            <label for="$11">$11 -$20</label>
+            <input
+              class="categories-dropdown-drop"
+              type="checkbox"
+              id="$11"
+              name="$11"
+              value="$11"
+            /> </div> <br />
+            <div class="categories-dropdown">
+            <label for="$20">$20 - $40</label>
+            <input
+              class="categories-dropdown-drop"
+              type="checkbox"
+              id="$20"
+              name="$20"
+              value="$20"
+            /> </div>
+            <br />
+          </form>
+        </div>
+        <div>
+          <div class="categories-dropdown-grey" >
+            <div>File Type</div>
+            <div class="categories-dropdown-drop">
+              <img
+                src="./assets/img/checkboxes-dropdown.svg"
+                alt="checkboxes-dropdown"
+              />
+            </div>
+          </div>
+          <br>
+          <form>
+            <div class="categories-dropdown">
+            <label for=".PSD">.PSD</label>
+            <input
+              class="categories-dropdown-drop"
+              type="checkbox"
+              id=".PSD"
+              name=".PSD"
+              value=".PSD"
+            />
+            </div>
+            <br />
+          <div class="categories-dropdown">
+            <label for=".FIG">.FIG</label>
+            <input
+              class="categories-dropdown-drop"
+              type="checkbox"
+              id=".FIG"
+              name=".FIG"
+              value=".FIG"
+              checked
+            /></div> <br />
+          <div class="categories-dropdown">
+            <label for=".SVG">.SVG</label>
+            <input
+              class="categories-dropdown-drop"
+              type="checkbox"
+              id=".SVG"
+              name=".SVG"
+              value=".SVG"
+            /></div> <br />
+
+          <div class="categories-dropdown">
+            <label for=".XD">.XD</label>
+            <input
+              class="categories-dropdown-drop"
+              type="checkbox"
+              id=".XD"
+              name=".XD"
+              value=".XD"
+            />
+          </div> <br />
+          </form>
+        </div>
+        <div>
+          <div class="categories-dropdown-grey">
+            <div>Software Type</div>
+            <div class="categories-dropdown-drop">
+              <img
+                src="./assets/img/checkboxes-dropdown.svg"
+                alt="checkboxes-dropdown"
+              />
+            </div>
+          </div>
+          <br>
+          <form>
+            <div class="categories-dropdown">
+            <label for="figma">FIGMA</label>
+            <input
+              class="categories-dropdown-drop"
+              type="checkbox"
+              id="figma"
+              name="figma"
+              value="figma"
+            /> </div>
+            <br />
+            <div class="categories-dropdown">
+            <label for="adobe">ADOBE XD</label>
+            <input
+              class="categories-dropdown-drop"
+              type="checkbox"
+              id="adobe"
+              name="adobe"
+              value="adobe"
+              checked
+            /> </div> <br />
+            <div class="categories-dropdown">
+            <label for="sketch">SKETCH</label>
+            <input
+              class="categories-dropdown-drop"
+              type="checkbox"
+              id="sketch"
+              name="sketch"
+              value="sketch"
+            /> </div> <br />
+            <div class="categories-dropdown">
+            <label for="invision">INVISION</label>
+            <input
+              class="categories-dropdown-drop"
+              type="checkbox"
+              id="invision"
+              name="invision"
+              value="invision"
+            /> </div>
+            <br />
+          </form>
+          <div class="categories-dropdown-grey">
+            <div>Properties</div>
+            <div class="categories-dropdown-drop">
+              <img
+                src="./assets/img/checkboxes-dropdown.svg"
+                alt="checkboxes-dropdown"
+              />
+            </div>
+          </div>
+          <div class="categories-dropdown-reset-filters">
+            Reset Filters
+          </div>
+        </div>
+      </div>
+      <div class="filter-and-result-cards">
+        <div class="filter-and-result-card-item">
+          <div class="filter-and-result-card-item-center">
+            <div class="filter-and-result-card-item-grey-area">
+              <button class="filter-and-result-card-item-grey-area-btn">Free</button>
+            </div>
+            <div class="filter-and-result-card-item-grey-area-text">
+              <div class="p">
+                <p>Ogbonda Chiziaruhoma</p>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_heart.svg" />
+                <div>205</div>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_download.svg" />
+                <div>1,114</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-and-result-card-item">
+          <div class="filter-and-result-card-item-center">
+            <div class="filter-and-result-card-item-grey-area">
+              <button class="filter-and-result-card-item-grey-area-btns">10$</button>
+            </div>
+            <div class="filter-and-result-card-item-grey-area-text">
+              <div class="p">
+                <p>Ogbonda Chiziaruhoma</p>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_heart.svg" />
+                <div>205</div>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_download.svg" />
+                <div>1,114</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-and-result-card-item">
+          <div class="filter-and-result-card-item-center">
+            <div class="filter-and-result-card-item-grey-area">
+              <button class="filter-and-result-card-item-grey-area-btn">Free</button>
+            </div>
+            <div class="filter-and-result-card-item-grey-area-text">
+              <div class="p">
+                <p>Ogbonda Chiziaruhoma</p>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_heart.svg" />
+                <div>205</div>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_download.svg" />
+                <div>1,114</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-and-result-card-item">
+          <div class="filter-and-result-card-item-center">
+            <div class="filter-and-result-card-item-grey-area">
+              <button class="filter-and-result-card-item-grey-area-btn">Free</button>
+            </div>
+            <div class="filter-and-result-card-item-grey-area-text">
+              <div class="p">
+                <p>Ogbonda Chiziaruhoma</p>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_heart.svg" />
+                <div>205</div>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_download.svg" />
+                <div>1,114</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-and-result-card-item">
+          <div class="filter-and-result-card-item-center">
+            <div class="filter-and-result-card-item-grey-area">
+              <button class="filter-and-result-card-item-grey-area-btns">10$</button>
+            </div>
+            <div class="filter-and-result-card-item-grey-area-text">
+              <div class="p">
+                <p>Ogbonda Chiziaruhoma</p>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_heart.svg" />
+                <div>205</div>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_download.svg" />
+                <div>1,114</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-and-result-card-item">
+          <div class="filter-and-result-card-item-center">
+            <div class="filter-and-result-card-item-grey-area">
+              <button class="filter-and-result-card-item-grey-area-btn">Free</button>
+            </div>
+            <div class="filter-and-result-card-item-grey-area-text">
+              <div class="p">
+                <p>Ogbonda Chiziaruhoma</p>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_heart.svg" />
+                <div>205</div>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_download.svg" />
+                <div>1,114</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-and-result-card-item">
+          <div class="filter-and-result-card-item-center">
+            <div class="filter-and-result-card-item-grey-area">
+              <button class="filter-and-result-card-item-grey-area-btn">Free</button>
+            </div>
+            <div class="filter-and-result-card-item-grey-area-text">
+              <div class="p">
+                <p>Ogbonda Chiziaruhoma</p>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_heart.svg" />
+                <div>205</div>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_download.svg" />
+                <div>1,114</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-and-result-card-item">
+          <div class="filter-and-result-card-item-center">
+            <div class="filter-and-result-card-item-grey-area">
+              <button class="filter-and-result-card-item-grey-area-btns">10$</button>
+            </div>
+            <div class="filter-and-result-card-item-grey-area-text">
+              <div class="p">
+                <p>Ogbonda Chiziaruhoma</p>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_heart.svg" />
+                <div>205</div>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_download.svg" />
+                <div>1,114</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-and-result-card-item">
+          <div class="filter-and-result-card-item-center">
+            <div class="filter-and-result-card-item-grey-area">
+              <button class="filter-and-result-card-item-grey-area-btn">Free</button>
+            </div>
+            <div class="filter-and-result-card-item-grey-area-text">
+              <div class="p">
+                <p>Ogbonda Chiziaruhoma</p>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_heart.svg" />
+                <div>205</div>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_download.svg" />
+                <div>1,114</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-and-result-card-item">
+          <div class="filter-and-result-card-item-center">
+            <div class="filter-and-result-card-item-grey-area">
+              <button class="filter-and-result-card-item-grey-area-btn">Free</button>
+            </div>
+            <div class="filter-and-result-card-item-grey-area-text">
+              <div class="p">
+                <p>Ogbonda Chiziaruhoma</p>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_heart.svg" />
+                <div>205</div>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_download.svg" />
+                <div>1,114</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-and-result-card-item">
+          <div class="filter-and-result-card-item-center">
+            <div class="filter-and-result-card-item-grey-area">
+              <button class="filter-and-result-card-item-grey-area-btns">10$</button>
+            </div>
+            <div class="filter-and-result-card-item-grey-area-text">
+              <div class="p">
+                <p>Ogbonda Chiziaruhoma</p>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_heart.svg" />
+                <div>205</div>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_download.svg" />
+                <div>1,114</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-and-result-card-item">
+          <div class="filter-and-result-card-item-center">
+            <div class="filter-and-result-card-item-grey-area">
+              <button class="filter-and-result-card-item-grey-area-btn">Free</button>
+            </div>
+            <div class="filter-and-result-card-item-grey-area-text">
+              <div class="p">
+                <p>Ogbonda Chiziaruhoma</p>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_heart.svg" />
+                <div>205</div>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_download.svg" />
+                <div>1,114</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-and-result-card-item">
+          <div class="filter-and-result-card-item-center">
+            <div class="filter-and-result-card-item-grey-area">
+              <button class="filter-and-result-card-item-grey-area-btn">Free</button>
+            </div>
+            <div class="filter-and-result-card-item-grey-area-text">
+              <div class="p">
+                <p>Ogbonda Chiziaruhoma</p>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_heart.svg" />
+                <div>205</div>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_download.svg" />
+                <div>1,114</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-and-result-card-item">
+          <div class="filter-and-result-card-item-center">
+            <div class="filter-and-result-card-item-grey-area">
+              <button class="filter-and-result-card-item-grey-area-btns">10$</button>
+            </div>
+            <div class="filter-and-result-card-item-grey-area-text">
+              <div class="p">
+                <p>Ogbonda Chiziaruhoma</p>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_heart.svg" />
+                <div>205</div>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_download.svg" />
+                <div>1,114</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-and-result-card-item">
+          <div class="filter-and-result-card-item-center">
+            <div class="filter-and-result-card-item-grey-area">
+              <button class="filter-and-result-card-item-grey-area-btn">Free</button>
+            </div>
+            <div class="filter-and-result-card-item-grey-area-text">
+              <div class="p">
+                <p>Ogbonda Chiziaruhoma</p>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_heart.svg" />
+                <div>205</div>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_download.svg" />
+                <div>1,114</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-and-result-card-item">
+          <div class="filter-and-result-card-item-center">
+            <div class="filter-and-result-card-item-grey-area">
+              <button class="filter-and-result-card-item-grey-area-btn">Free</button>
+            </div>
+            <div class="filter-and-result-card-item-grey-area-text">
+              <div class="p">
+                <p>Ogbonda Chiziaruhoma</p>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_heart.svg" />
+                <div>205</div>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_download.svg" />
+                <div>1,114</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-and-result-card-item">
+          <div class="filter-and-result-card-item-center">
+            <div class="filter-and-result-card-item-grey-area">
+              <button class="filter-and-result-card-item-grey-area-btns">10$</button>
+            </div>
+            <div class="filter-and-result-card-item-grey-area-text">
+              <div class="p">
+                <p>Ogbonda Chiziaruhoma</p>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_heart.svg" />
+                <div>205</div>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_download.svg" />
+                <div>1,114</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-and-result-card-item">
+          <div class="filter-and-result-card-item-center">
+            <div class="filter-and-result-card-item-grey-area">
+              <button class="filter-and-result-card-item-grey-area-btn">Free</button>
+            </div>
+            <div class="filter-and-result-card-item-grey-area-text">
+              <div class="p">
+                <p>Ogbonda Chiziaruhoma</p>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_heart.svg" />
+                <div>205</div>
+              </div>
+              <div class="filter-and-result-card-item-grey-area-grey-icon">
+                <img src="./assets/img/bi_download.svg" />
+                <div>1,114</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="pagination">
+      <p>1 2 3 4 ... 10</p>
+    </div>
+    <footer>
+      <div class="footer-top">
+        <img src="./assets/img/logo/logo-light.svg" alt="logo" width="150px" />
+        <div>
+          <i class="fa-regular fa-copyright"></i> 2021 Codenka. All rights
+          reserved
+        </div>
+      </div>
+      <div class="footer-ul">
+        <div class="footer-product">
+          <ul>
+            <li>Product</li>
+            <li>Overview</li>
+            <li>Features</li>
+            <li>Tutorials</li>
+            <li>Pricing</li>
+            <li>Releases</li>
+          </ul>
+        </div>
+        <div class="footer-company">
+          <ul>
+            <li>Company</li>
+            <li>About</li>
+            <li>Press</li>
+            <li>Careers</li>
+            <li>Contact</li>
+            <li>Partners</li>
+          </ul>
+        </div>
+        <div class="footer-support">
+          <ul>
+            <li>Support</li>
+            <li>Help Center</li>
+            <li>Terms of service</li>
+            <li>Legal</li>
+            <li>Privacy Policy</li>
+            <li>Status</li>
+          </ul>
+        </div>
+        <div class="footer-follow">
+          <ul>
+            <li>Follow Us</li>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Dribble</li>
+            <li>Instagram</li>
+            <li>LinkedIn</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

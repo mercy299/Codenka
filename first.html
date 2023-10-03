@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/navbar.css" />
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Vue basics</title>
+</head>
+<body>
+    <nav>
+        <img src="./assets/img/logo/logo.svg" alt="logo" width="150px" />
+        <ul>
+            <li v-for="link in links" class="active"><a v-bind:href="link.url">{{ link.text }}</a></li>
+          <!-- <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="browse.html">Browse</a></li>
+          <li><a href="template.html">Become an author</a></li>
+          <li><a href="blog.html">Blog</a></li> -->
+        </ul>
+        <ul class="nav-signup">
+          <li><a href="signup.html">Sign Up</a> | <a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+      <script>
+        Vue.createApp({
+            data() {
+                return {
+                    links: [
+                       { text: 'Home', url: 'index.html' },
+                       { text: 'About', url: 'about.html' },
+                       { text: 'Browse', url: 'browse.html'},
+                       { text: 'Become an author', url: 'template.html' },
+                        { text: 'Blog', url: 'blog.html'}
+                    ]
+                }
+            }
+         }).mount('nav')
+      </script>
+</body>
+</html>
